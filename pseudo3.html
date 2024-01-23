@@ -32,7 +32,7 @@
             background-color: rgb(252, 0, 0); /* Color change on hover */
             font-family: fantasy;
             color: white;
-            
+
 
         }
 
@@ -48,7 +48,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /*this crops images to a certain square*/
         }
         #two {
             display: none; /* Initially hide the second image */
@@ -73,7 +73,7 @@
             display: flex; /* Show the second text on hover */
             text-align: center;
             line-height: 1;
-            background-color: rgb(252, 0, 0); /* Background color change on hover */
+            background-color: blue; /* Background color change on hover */
             color: white; /* Text color change on hover */
             margin: 10px;
         }
@@ -90,8 +90,8 @@
     <div class="grid-wrapper">
         <div class="grid-item">Item 1</div>
         <div class="grid-item image-container">
-            <img id='one' src='img1.jpeg'>
-            <img id='two' src='img2.webp'>
+            <img id='one' src='img4.png'>
+            <img id='two' src='img3.webp'>
         </div>
         <div class="grid-item image-container">
             <img id='one' src='img3.webp'>

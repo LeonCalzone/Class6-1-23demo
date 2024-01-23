@@ -23,9 +23,12 @@
             width: 100%;
             height: auto;
         }
+        h1:hover #one{
+                display:block;
+        }
         
         #two {
-            display: none;
+            display: none; /*work in progress*/
         }
         .wrapper:hover #one {
             display: none; /* Hide the first image on hover */
@@ -39,6 +42,8 @@
     <title>Image Centering</title>
 </head>
 <body>
+    <div class="demo"> hover on me</div>
+    <h1>hover on me</h1>
     <div class="wrapper">
         <img id='one' src='img1.jpeg'>
         <img id='two' src='img2.webp'>

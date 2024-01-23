@@ -26,12 +26,11 @@
             justify-content: center;
             background-color: skyblue;
             height: 100px;
-            transition: transform 0.3s ease;
             transform-style: preserve-3d; /* Enable 3D transformations */
         }
 
         .grid-item:hover {
-            animation: rotateAndChangeColor 2s forwards;
+            animation: rotateAndChangeColor 2s forwards; /*animation I declared in the @keyframes area*/
         }
 
         @keyframes rotateAndChangeColor {
@@ -42,10 +41,13 @@
             50% {
                 background-color: coral;
                 transform: rotateY(180deg);
+                transform:rotateX(90deg);
             }
             100% {
-                background-color: skyblue;
+                background-color: green;
                 transform: rotateY(360deg);
+                transform:rotateX(180deg);
+
             }
         }
     </style>

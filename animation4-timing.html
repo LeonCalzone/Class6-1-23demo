@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Timing Functions</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: skyblue;
+            animation: move 2s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes move {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+            from {background-color: red;
+  
+  }
+  to {background-color: yellow;
+   
+  
+    }
+        }
+
+        #div1 { animation-timing-function: linear; }
+        #div2 { animation-timing-function: ease; }
+        #div3 { animation-timing-function: ease-in; }
+        #div4 { animation-timing-function: ease-out; }
+        #div5 { animation-timing-function: ease-in-out; }
+    </style>
+</head>
+<body>
+    <div id="div1">Linear</div>
+    <div id="div2">Ease</div>
+    <div id="div3">Ease-In</div>
+    <div id="div4">Ease-Out</div>
+    <div id="div5">Ease-In-Out</div>
+</body>
+</html>

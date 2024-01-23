@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Example 3</title>
+    <style>
+        /* The animation code */
+@keyframes example {
+  from {background-color: red;
+    transform: rotate(0deg) scale(1);
+    filter: blur(0px);
+  
+  }
+  to {background-color: yellow;
+    transform: rotate(360deg) scale(2);
+    filter: blur(20px);
+    }
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* This will vertically center your images */
+    justify-content: center; /* This will horizontally center your images */
+}   
+
+/* The element to apply the animation to */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red; /* Red background to start*/
+  animation: example 5s ease-in-out infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

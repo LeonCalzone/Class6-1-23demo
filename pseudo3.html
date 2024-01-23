@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center; /* Center the grid vertically */
+            justify-content: center; /* Center the grid horizontally */
+        }
+
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+            grid-template-rows: repeat(3, 1fr); /* 3-row grid */
+            gap: 10px; /* Space between grid items */
+            width: 500px; /* Fixed width for the grid */
+            height: 500px; /* Fixed height for the grid */
+        }
+
+        .grid-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; /* Default background color */
+        }
+
+        .grid-item:hover {
+            background-color: rgb(252, 0, 0); /* Color change on hover */
+            font-family: fantasy;
+            color: white;
+            
+
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #two {
+            display: none; /* Initially hide the second image */
+        }
+        .image-container:hover #one {
+            display: none; /* Hide the first image on hover */
+        }
+
+        .image-container:hover #two {
+            display: block; /* Show the second image on hover */
+        }
+
+
+       
+        .text-content#text-two {
+            display: none; /* Initially hide the second text */
+        }
+        .text-container:hover .text-content#text-one {
+            display: none; /* Hide the first text on hover */
+        }
+        .text-container:hover .text-content#text-two {
+            display: flex; /* Show the second text on hover */
+            text-align: center;
+            line-height: 1;
+            background-color: rgb(252, 0, 0); /* Background color change on hover */
+            color: white; /* Text color change on hover */
+            margin: 10px;
+        }
+        /* The CSS rule .text-container:hover .text-content#text-two applies styling to an 
+        element with both the class .text-content and the ID #text-two, 
+        but only when its parent element with the class .text-container 
+        is being hovered over. */
+
+       
+    </style>
+    <title>Grid with Hover States</title>
+</head>
+<body>
+    <div class="grid-wrapper">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item image-container">
+            <img id='one' src='img1.jpeg'>
+            <img id='two' src='img2.webp'>
+        </div>
+        <div class="grid-item image-container">
+            <img id='one' src='img3.webp'>
+            <img id='two' src='img2.webp'>
+        </div>
+        <div class="grid-item image-container">
+            <img id='one' src='img4.png'>
+            <img id='two' src='img2.webp'>
+        </div>
+        <div class="grid-item image-container">
+            <img id='one' src='img2.webp'>
+            <img id='two' src='img3.webp'>
+        </div>
+        <div class="grid-item text-container">
+
+            <div class="text-content" id="text-one">Item 10</div>
+            <div class="text-content" id="text-two">New sentence appears here</div>
+</div>
+        <!-- Add more grid items or image containers as needed -->
+    </div>
+</body>
+</html>

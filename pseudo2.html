@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center; /* This will vertically center your images */
+            justify-content: center; /* This will horizontally center your images */
+        }
+
+        .wrapper {
+            width: 500px; /* Set a fixed width for the wrapper */
+            height: auto; /* Set a dynamic height for the wrapper */
+            display: flex;
+            align-content: center; /* This will vertically center your images */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        #two {
+            display: none;
+        }
+        .wrapper:hover #one {
+            display: none; /* Hide the first image on hover */
+        }
+        .wrapper:hover #two {
+            display: block; /* Show the second image on hover */
+        }
+
+       
+    </style>
+    <title>Image Centering</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img id='one' src='img1.jpeg'>
+        <img id='two' src='img2.webp'>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Pseudo-Selectors Example</title>
+<style>
+  /* Style for unvisited links */
+  a:link {
+    color: blue;
+  }
+
+  /* Style for visited links */
+  a:visited {
+    color: purple;
+  }
+
+  /* Style for mouse over link */
+  a:hover {
+    color: red;
+  }
+
+  /* Style for selected link */
+  a:active {
+    color: yellow;
+  }
+
+  /* Style for the first paragraph */
+  p:first-of-type {
+    color: green;
+    font-weight: bold;
+  }
+
+  /* Style for paragraphs when being hovered over */
+  p:hover {
+    background-color: lightgray;
+  }
+
+  /* Style the first letter of every paragraph */
+  p::first-letter {
+    font-size: 200%;
+    color: orange;
+  }
+
+  /* Style the first line of every paragraph */
+  p::first-line {
+    font-variant: small-caps;
+  }
+
+  /* Style input fields with focus */
+  input:focus {
+    background-color: lightyellow;
+  }
+
+  /* Style elements that are disabled */
+  input:disabled {
+    background-color: lightgrey;
+  }
+
+  /* Style elements that are checked */
+  input:checked {
+    accent-color: blue;
+  }
+
+  /* Style the placeholder text */
+  input::placeholder {
+    color: grey;
+  }
+
+  /* Style for elements that are the first child of their parent */
+  li:first-child {
+    font-size: 4em;
+  }
+
+  /* Style for elements that are the last child of their parent */
+  li:last-child {
+    font-size: 1.2em;
+  }
+
+  li{
+text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<h1>Pseudo-Selectors in CSS</h1>
+
+<a href="#">This is a link (hover over me!)</a>
+<p>This is a paragraph. The first letter and first line should look different.</p>
+<p>Hover over this paragraph to see the background change!</p>
+
+<form>
+  <input type="text" placeholder="Focus on me!">
+  <input type="text" disabled placeholder="I'm disabled">
+  <input type="checkbox" checked> I'm checked
+</form>
+
+<ul>
+  <li>This is the first item</li>
+  <li>This is a middle item</li>
+  <li>This is the last item</li>
+</ul>
+
+</body>
+</html>
